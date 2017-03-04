@@ -18,5 +18,19 @@
     <ClCompile Include="..\..\src\Demo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\MC_PixelMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MC_LoadTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\MC_PixelMap.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\MC_LoadTools.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
