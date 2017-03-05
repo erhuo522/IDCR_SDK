@@ -18,10 +18,13 @@
     <ClCompile Include="..\..\src\Demo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\MC_PixelMap.cpp">
+    <ClCompile Include="..\..\src\MC_LoadTools.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\MC_LoadTools.cpp">
+    <ClCompile Include="..\..\src\MC_EasyImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MC_Binarization.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +33,12 @@
       <Filter>源文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\MC_LoadTools.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\MC_EasyImage.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\MC_Binarization.h">
       <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>

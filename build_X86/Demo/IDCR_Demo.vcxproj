@@ -12,10 +12,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\Demo.cpp" />
+    <ClCompile Include="..\..\src\MC_Binarization.cpp" />
+    <ClCompile Include="..\..\src\MC_EasyImage.cpp" />
     <ClCompile Include="..\..\src\MC_LoadTools.cpp" />
-    <ClCompile Include="..\..\src\MC_PixelMap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\MC_Binarization.h" />
+    <ClInclude Include="..\..\src\MC_EasyImage.h" />
     <ClInclude Include="..\..\src\MC_LoadTools.h" />
     <ClInclude Include="..\..\src\MC_PixelMap.h" />
   </ItemGroup>
@@ -59,7 +62,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;MC_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +77,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
