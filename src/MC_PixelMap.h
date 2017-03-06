@@ -2,32 +2,31 @@
 #ifndef MC_PIXEL_MAP_TEMPLATE_INCLUDE_H__
 #define MC_PIXEL_MAP_TEMPLATE_INCLUDE_H__
 
+#include <stdio.h>
 
-struct rgb
+struct color24
 {
 	unsigned char r;
 	unsigned char g;
 	unsigned char b;
 
-	rgb() {}
+	color24() {}
  
-	rgb(unsigned char r_, unsigned char g_, unsigned char b_) 
+	color24(unsigned char r_, unsigned char g_, unsigned char b_)
 		:r(r_), g(g_), b(b_)
 	{
 
 	}
 };
 
-struct bgr
+struct color8
 {
-	unsigned char b;
-    unsigned char g;
-    unsigned char r;
-
-	bgr() {}
+	unsigned char clr;
+    
+    color8() {}
  
-	bgr(unsigned char b_, unsigned char g_, unsigned char r_) 
-		:b(b_), g(g_), r(r_)
+	color8(unsigned char clr_)
+		:clr(clr_)
 	{
 
 	}
@@ -138,9 +137,10 @@ unsigned int  PixelMap<ColorT>::RowBytes() const
 	return m_lineBytes;
 }
 
+//-------------------------------------------
 
-typedef PixelMap<rgb>   PixelMap_RGB;
-typedef PixelMap<bgr>   PixelMap_BGR;
+typedef PixelMap<color24>   PixelMap_Clr24;
+typedef PixelMap<color8>    PixelMap_Clr8;
 
 
 #endif  //MC_PIXEL_MAP_TEMPLATE_INCLUDE_H__

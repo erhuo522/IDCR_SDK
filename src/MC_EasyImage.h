@@ -2,8 +2,8 @@
 #ifndef MC_EASY_IMAGE_INCLUDE_H__
 #define MC_EASY_IMAGE_INCLUDE_H__
 
-
-
+#include <stdio.h>
+#include <string.h>
 
 class EasyImage
 {
@@ -29,7 +29,7 @@ public:
 
 public:
 	template <typename ImageT>
-	static bool Save(const char* szfile,  const typename ImageT* pPixel)
+	static bool Save(const char* filename,  const ImageT* pPixel)
 	{
 
 		FILE* pfile = fopen(filename, "rb");
@@ -104,12 +104,8 @@ public:
 	}
 
 	template <typename ImageT>
-	static bool Load(const char* szfile, typename ImageT* pPixel)
+	static bool Load(const char* filename, ImageT* pPixel)
 	{
-		int xwx = sizeof(EIHeader);
-		int xx = sizeof(EIInfo);
-
-
 		FILE* pfile = fopen(filename, "wb");
 		if (pfile)
 		{
